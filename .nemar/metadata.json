@@ -1,0 +1,43 @@
+{
+  "version": "2.0",
+  "dataset_id": "on002336",
+  "source": "openneuro",
+  "source_id": "ds002336",
+  "title": "A multi-modal human neuroimaging dataset for data integration: simultaneous EEG and fMRI acquisition during a motor imagery neurofeedback task: XP1",
+  "authors": {
+    "Giulia Lioi": {},
+    "Claire Cury": {},
+    "Lorraine Perronnet": {},
+    "Marsel Mano": {},
+    "Elise Bannier": {},
+    "Anatole Lecuyer": {},
+    "Christian Barillot": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds002336.v2.0.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.2.0",
+  "recording_modality": [
+    "anat",
+    "eeg",
+    "func"
+  ],
+  "datatypes": [
+    "anat",
+    "eeg",
+    "func"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "This work was supported by the French Natinal Research Agency under the reference ANR-10-LABX-07-01"
+    }
+  ],
+  "acknowledgements": "MRI data acquisition was supported by the Neurinfo MRI research facility at the University Hospital of Rennes, which is granted by the European Union and the French Gouvernment"
+}
