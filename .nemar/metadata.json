@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on002336",
-  "source": "openneuro",
-  "source_id": "ds002336",
+  "pipeline_stage": "enriched",
   "title": "A multi-modal human neuroimaging dataset for data integration: simultaneous EEG and fMRI acquisition during a motor imagery neurofeedback task: XP1",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Giulia Lioi": {},
     "Claire Cury": {},
@@ -11,33 +11,106 @@
     "Marsel Mano": {},
     "Elise Bannier": {},
     "Anatole Lecuyer": {},
-    "Christian Barillot": {}
+    "Christian Barillot": {
+      "orcid": "0000-0002-1589-7696"
+    }
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds002336.v2.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.3389/fnhum.2017.00193.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1101/862375",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on002336",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on002336",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.3389/fnhum.2017.00193",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.3389/fnins.2017.00140",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.2.0",
-  "recording_modality": [
-    "anat",
-    "eeg",
-    "func"
-  ],
-  "datatypes": [
-    "anat",
-    "eeg",
-    "func"
   ],
   "funding_references": [
     {
-      "funder_name": "This work was supported by the French Natinal Research Agency under the reference ANR-10-LABX-07-01"
+      "funder_name": "French National Research Agency",
+      "award_number": "ANR-10-LABX-07-01"
     }
   ],
-  "acknowledgements": "MRI data acquisition was supported by the Neurinfo MRI research facility at the University Hospital of Rennes, which is granted by the European Union and the French Gouvernment"
+  "modalities": [
+    "anat",
+    "eeg",
+    "func"
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".dat",
+    ".eeg",
+    ".gitattributes",
+    ".gz",
+    ".json",
+    ".mat",
+    ".md",
+    ".png",
+    ".tiff",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset comprises simultaneous EEG and fMRI recordings from 10 subjects performing motor imagery and neurofeedback tasks. Participants completed six runs including motor localization, pre- and post-neurofeedback motor imagery, and three neurofeedback conditions (bimodal EEG-fMRI, unimodal EEG, and unimodal fMRI). The dataset integrates 64-channel EEG data (5 kHz sampling) with 3T fMRI (2×2×4 mm³ resolution) to enable multi-modal neuroimaging analysis of motor control and real-time neurofeedback mechanisms.",
+  "methods_description": "EEG was recorded using a 64-channel MR-compatible system (Brain Products) at 5 kHz with FCz reference and AFz ground. fMRI was acquired on a 3T Siemens Verio using echo-planar imaging (TR=2s, TE=23ms, 32 slices, 2×2×4 mm³ voxels). Subjects performed kinaesthetic motor imagery of the right hand during six runs with 20-second block design alternating rest and task periods. EEG preprocessing included gradient artifact correction, downsampling to 200 Hz, low-pass filtering (50 Hz), and ballistocardiogram artifact correction. fMRI preprocessing involved slice-time correction, realignment, coregistration, smoothing (6 mm Gaussian kernel), and MNI normalization.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "fMRI"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "neurofeedback"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "real-time brain imaging"
+    },
+    {
+      "term": "simultaneous EEG-fMRI"
+    },
+    {
+      "term": "motor control"
+    },
+    {
+      "term": "brain-computer interface"
+    }
+  ],
+  "source_hash": "5c6389b80ee2c948982455b62b08d0a7fa0f118620cd3afff078128cc9e85384"
 }
