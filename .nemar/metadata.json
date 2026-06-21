@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "A multi-modal human neuroimaging dataset for data integration: simultaneous EEG and fMRI acquisition during a motor imagery neurofeedback task: XP1",
+  "description": "This dataset comprises simultaneous EEG and fMRI recordings from 10 subjects performing motor imagery and neurofeedback tasks. Participants completed six runs including motor localization, pre- and post-neurofeedback motor imagery, and three neurofeedback conditions (bimodal EEG-fMRI, unimodal EEG, and unimodal fMRI). The dataset provides raw and preprocessed EEG data (64 channels at 5 kHz), BOLD fMRI data (3T Siemens, 2×2×4 mm³ resolution), and computed neurofeedback scores, enabling investigation of multimodal brain imaging integration during motor control and real-time neurofeedback.",
+  "methods_description": "EEG was recorded using a 64-channel MR-compatible system (Brain Products) at 5 kHz sampling rate with FCz reference and AFz ground. fMRI was acquired using 3T Siemens Verio with echo-planar imaging (TR=2s, TE=23ms, 2×2×4 mm³ voxels, 32 slices). EEG preprocessing included gradient artifact correction, downsampling to 200 Hz, low-pass filtering (50 Hz cutoff), ballistocardiogram artifact correction, and segmentation. fMRI preprocessing involved slice-time correction, spatial realignment, coregistration, and smoothing using SPM8.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -15,12 +17,39 @@
       "orcid": "0000-0002-1589-7696"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds002336.v2.0.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "fMRI"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "neurofeedback"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "real-time brain imaging"
+    },
+    {
+      "term": "motor control"
+    },
+    {
+      "term": "simultaneous EEG-fMRI"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "motor localization"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.3389/fnhum.2017.00193.",
       "identifier_type": "DOI",
@@ -50,6 +79,11 @@
       "identifier": "10.3389/fnins.2017.00140",
       "identifier_type": "DOI",
       "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds002336.v2.0.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -58,14 +92,14 @@
       "award_number": "ANR-10-LABX-07-01"
     }
   ],
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "eeg",
     "func"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "19.3 GB (511 files)"
   ],
   "formats": [
     ".dat",
@@ -79,38 +113,8 @@
     ".tiff",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "This dataset comprises simultaneous EEG and fMRI recordings from 10 subjects performing motor imagery and neurofeedback tasks. Participants completed six runs including motor localization, pre- and post-neurofeedback motor imagery, and three neurofeedback conditions (bimodal EEG-fMRI, unimodal EEG, and unimodal fMRI). The dataset integrates 64-channel EEG data (5 kHz sampling) with 3T fMRI (2×2×4 mm³ resolution) to enable multi-modal neuroimaging analysis of motor control and real-time neurofeedback mechanisms.",
-  "methods_description": "EEG was recorded using a 64-channel MR-compatible system (Brain Products) at 5 kHz with FCz reference and AFz ground. fMRI was acquired on a 3T Siemens Verio using echo-planar imaging (TR=2s, TE=23ms, 32 slices, 2×2×4 mm³ voxels). Subjects performed kinaesthetic motor imagery of the right hand during six runs with 20-second block design alternating rest and task periods. EEG preprocessing included gradient artifact correction, downsampling to 200 Hz, low-pass filtering (50 Hz), and ballistocardiogram artifact correction. fMRI preprocessing involved slice-time correction, realignment, coregistration, smoothing (6 mm Gaussian kernel), and MNI normalization.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "fMRI"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "neurofeedback"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "real-time brain imaging"
-    },
-    {
-      "term": "simultaneous EEG-fMRI"
-    },
-    {
-      "term": "motor control"
-    },
-    {
-      "term": "brain-computer interface"
-    }
-  ],
-  "source_hash": "5c6389b80ee2c948982455b62b08d0a7fa0f118620cd3afff078128cc9e85384"
+  "source_hash": "0279eecad06b118c1d77e00eed5db35234b8600cb2b05273f9a36cf7d75ac31d"
 }
