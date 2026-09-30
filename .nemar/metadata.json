@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "A multi-modal human neuroimaging dataset for data integration: simultaneous EEG and fMRI acquisition during a motor imagery neurofeedback task: XP1",
-  "description": "This dataset comprises simultaneous EEG and fMRI recordings from 10 subjects performing motor imagery and neurofeedback tasks. Participants completed six runs including motor localization, pre- and post-neurofeedback motor imagery, and three neurofeedback conditions (bimodal EEG-fMRI, unimodal EEG, and unimodal fMRI). The dataset provides raw and preprocessed EEG data (64 channels at 5 kHz), BOLD fMRI data (3T Siemens, 2×2×4 mm³ resolution), and computed neurofeedback scores, enabling investigation of multimodal brain imaging integration during motor control and real-time neurofeedback.",
-  "methods_description": "EEG was recorded using a 64-channel MR-compatible system (Brain Products) at 5 kHz sampling rate with FCz reference and AFz ground. fMRI was acquired using 3T Siemens Verio with echo-planar imaging (TR=2s, TE=23ms, 2×2×4 mm³ voxels, 32 slices). EEG preprocessing included gradient artifact correction, downsampling to 200 Hz, low-pass filtering (50 Hz cutoff), ballistocardiogram artifact correction, and segmentation. fMRI preprocessing involved slice-time correction, spatial realignment, coregistration, and smoothing using SPM8.",
+  "description": "A multi-modal neuroimaging dataset (XP1) with simultaneous 64-channel EEG and fMRI recorded while 10 participants performed right-hand kinaesthetic motor imagery with neurofeedback. Each participant completed motor localizer, pre- and post-training motor imagery runs, and three neurofeedback runs (EEG-only, fMRI-only, and bimodal EEG-fMRI). The release includes raw and preprocessed EEG, BOLD fMRI, anatomical data, and EEG and BOLD neurofeedback scores to support multi-modal data integration.",
+  "methods_description": "EEG was recorded with a 64-channel MR-compatible Brain Products system at 5 kHz (FCz reference, AFz ground). fMRI was acquired on a 3T Siemens Verio with an EPI sequence (TR=2 s, TE=23 ms, 2x2x4 mm resolution, 32 slices). The protocol used 20 s rest/task block designs. EEG was preprocessed in BrainVision Analyzer II with gradient and ballistocardiogram artifact correction, downsampling to 200 Hz, and a 50 Hz low-pass filter. fMRI data for BOLD neurofeedback scores were preprocessed with SPM8.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -25,28 +25,23 @@
       "term": "fMRI"
     },
     {
-      "term": "motor imagery"
-    },
-    {
       "term": "neurofeedback"
     },
     {
-      "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "real-time brain imaging"
-    },
-    {
-      "term": "motor control"
+      "term": "motor imagery"
     },
     {
       "term": "simultaneous EEG-fMRI"
     },
     {
-      "term": "brain-computer interface"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "motor localization"
+      "term": "Magnetic Resonance Imaging",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008279"
     }
   ],
   "related_identifiers": [
@@ -58,15 +53,10 @@
     {
       "identifier": "10.1101/862375",
       "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on002336",
-      "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on002336",
+      "identifier": "https://github.com/nemarDatasets/on002336",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -84,6 +74,11 @@
       "identifier": "10.18112/openneuro.ds002336.v2.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on002336",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -99,7 +94,7 @@
     "func"
   ],
   "sizes": [
-    "19.3 GB (511 files)"
+    "17.97 GB (511 files)"
   ],
   "formats": [
     ".dat",
